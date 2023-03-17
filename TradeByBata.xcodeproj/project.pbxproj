@@ -13,6 +13,15 @@
 		2739D8FD29C06C0800184C1E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2739D8FC29C06C0800184C1E /* Preview Assets.xcassets */; };
 		2739D8FF29C06C0800184C1E /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2739D8FE29C06C0800184C1E /* Persistence.swift */; };
 		2739D90229C06C0800184C1E /* TradeByBata.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2739D90029C06C0800184C1E /* TradeByBata.xcdatamodeld */; };
+		2739D90B29C06D0C00184C1E /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2739D90A29C06D0C00184C1E /* LoginView.swift */; };
+		2739D92E29C071D700184C1E /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2739D91829C071D700184C1E /* Montserrat-Bold.ttf */; };
+		2739D93529C071D700184C1E /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2739D91F29C071D700184C1E /* Montserrat-Regular.ttf */; };
+		2739D93929C071D700184C1E /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2739D92329C071D700184C1E /* OFL.txt */; };
+		2739D93A29C071D700184C1E /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2739D92429C071D700184C1E /* README.txt */; };
+		2739D93C29C2FABC00184C1E /* GrayTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2739D93B29C2FABC00184C1E /* GrayTextField.swift */; };
+		2739D94129C4463900184C1E /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2739D94029C4463900184C1E /* TestView.swift */; };
+		2739D94329C4623400184C1E /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2739D94229C4623400184C1E /* SignInView.swift */; };
+		2739D94929C499D600184C1E /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2739D94829C499D600184C1E /* Fonts.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +32,16 @@
 		2739D8FC29C06C0800184C1E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2739D8FE29C06C0800184C1E /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		2739D90129C06C0800184C1E /* TradeByBata.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TradeByBata.xcdatamodel; sourceTree = "<group>"; };
+		2739D90A29C06D0C00184C1E /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		2739D91829C071D700184C1E /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
+		2739D91F29C071D700184C1E /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		2739D92329C071D700184C1E /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		2739D92429C071D700184C1E /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		2739D93B29C2FABC00184C1E /* GrayTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrayTextField.swift; sourceTree = "<group>"; };
+		2739D93D29C30A2700184C1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		2739D94029C4463900184C1E /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		2739D94229C4623400184C1E /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		2739D94829C499D600184C1E /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Fonts.swift; path = TradeByBata/Fonts.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,12 +74,19 @@
 		2739D8F429C06C0700184C1E /* TradeByBata */ = {
 			isa = PBXGroup;
 			children = (
+				2739D93D29C30A2700184C1E /* Info.plist */,
+				2739D90C29C071BE00184C1E /* Fonts */,
 				2739D8F529C06C0700184C1E /* TradeByBataApp.swift */,
 				2739D8F729C06C0700184C1E /* ContentView.swift */,
+				2739D94829C499D600184C1E /* Fonts.swift */,
+				2739D93B29C2FABC00184C1E /* GrayTextField.swift */,
+				2739D90A29C06D0C00184C1E /* LoginView.swift */,
+				2739D94229C4623400184C1E /* SignInView.swift */,
 				2739D8F929C06C0800184C1E /* Assets.xcassets */,
 				2739D8FE29C06C0800184C1E /* Persistence.swift */,
 				2739D90029C06C0800184C1E /* TradeByBata.xcdatamodeld */,
 				2739D8FB29C06C0800184C1E /* Preview Content */,
+				2739D94029C4463900184C1E /* TestView.swift */,
 			);
 			path = TradeByBata;
 			sourceTree = "<group>";
@@ -71,6 +97,33 @@
 				2739D8FC29C06C0800184C1E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2739D90C29C071BE00184C1E /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				2739D90D29C071D700184C1E /* Montserrat */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		2739D90D29C071D700184C1E /* Montserrat */ = {
+			isa = PBXGroup;
+			children = (
+				2739D91029C071D700184C1E /* static */,
+				2739D92329C071D700184C1E /* OFL.txt */,
+				2739D92429C071D700184C1E /* README.txt */,
+			);
+			path = Montserrat;
+			sourceTree = "<group>";
+		};
+		2739D91029C071D700184C1E /* static */ = {
+			isa = PBXGroup;
+			children = (
+				2739D91829C071D700184C1E /* Montserrat-Bold.ttf */,
+				2739D91F29C071D700184C1E /* Montserrat-Regular.ttf */,
+			);
+			path = static;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,7 +185,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				2739D8FD29C06C0800184C1E /* Preview Assets.xcassets in Resources */,
+				2739D93529C071D700184C1E /* Montserrat-Regular.ttf in Resources */,
+				2739D93929C071D700184C1E /* OFL.txt in Resources */,
+				2739D92E29C071D700184C1E /* Montserrat-Bold.ttf in Resources */,
 				2739D8FA29C06C0800184C1E /* Assets.xcassets in Resources */,
+				2739D93A29C071D700184C1E /* README.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,9 +200,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2739D94129C4463900184C1E /* TestView.swift in Sources */,
 				2739D8FF29C06C0800184C1E /* Persistence.swift in Sources */,
+				2739D90B29C06D0C00184C1E /* LoginView.swift in Sources */,
 				2739D8F829C06C0700184C1E /* ContentView.swift in Sources */,
 				2739D8F629C06C0700184C1E /* TradeByBataApp.swift in Sources */,
+				2739D93C29C2FABC00184C1E /* GrayTextField.swift in Sources */,
+				2739D94329C4623400184C1E /* SignInView.swift in Sources */,
+				2739D94929C499D600184C1E /* Fonts.swift in Sources */,
 				2739D90229C06C0800184C1E /* TradeByBata.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,6 +340,7 @@
 				DEVELOPMENT_TEAM = R7N2GQJZB3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TradeByBata/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -307,6 +370,7 @@
 				DEVELOPMENT_TEAM = R7N2GQJZB3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TradeByBata/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

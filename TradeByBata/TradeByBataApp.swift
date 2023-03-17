@@ -17,4 +17,6 @@ struct TradeByBataApp: App {
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
+    
+    
 }
