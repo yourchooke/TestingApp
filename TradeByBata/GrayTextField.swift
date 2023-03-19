@@ -24,7 +24,7 @@ struct GrayTextField: View {
                         TextField(title, text: $text)
                     } else {
                         SecureField(title, text: $text)
-                            .padding(.trailing, -30)
+                            .padding(.trailing, -45)
                         Button(action: { isSecured.toggle() }) {
                             Image(systemName: self.isSecured ? "eye.slash" : "eye")
                                 .accentColor(.gray)
@@ -35,8 +35,9 @@ struct GrayTextField: View {
                 
 
             }
+            .foregroundColor(Color(red: 0.482, green: 0.482, blue: 0.482))
         }
-        .font(.custom("Montserrat-regular.ttf", size: 12))
+        .font(AppFont().body)
         .multilineTextAlignment(.center)
         
         

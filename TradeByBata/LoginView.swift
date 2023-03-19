@@ -15,12 +15,12 @@ struct LoginView: View {
     var body: some View {
         VStack{
             Text("Welcome back")
-                .bold()
-                .scaleEffect(1.3)
+                .fontWeight(.semibold)
+                .fontSize(size: 30)
                 
             
             GrayTextField(title: "First name", text: $name, isSecured: false)
-                .padding(.init(top: 80, leading: 0, bottom: 35, trailing: 0))
+                .padding(.init(top: 60, leading: 0, bottom: 35, trailing: 0))
             
             GrayTextField(title: "Password", text: $password, isSecured: true)
             
@@ -29,6 +29,7 @@ struct LoginView: View {
             Button(action: {}) {
                 Spacer()
                 Text("Login")
+                    .font(AppFont().body)
                     .bold()
                 Spacer()
             }
@@ -38,7 +39,7 @@ struct LoginView: View {
             
             Spacer()
         }
-        .padding(EdgeInsets(top: 180, leading: 43, bottom: 0, trailing: 43))
+        .padding(EdgeInsets(top: 140, leading: 43, bottom: 0, trailing: 43))
         .ignoresSafeArea()
         
     }

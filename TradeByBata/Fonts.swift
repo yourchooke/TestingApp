@@ -7,25 +7,10 @@
 
 import SwiftUI
 
-extension Font {
-    static var body = Font.custom("Montserrat-Regular", size: UIFont.preferredFont(forTextStyle: .body).pointSize)
-    static var footnote: Font {
-           return Font.custom("Montserrat-Regular", size: UIFont.preferredFont(forTextStyle: .footnote).pointSize)
-       }
-    
-
+struct AppFont {
+    let body = Font.custom("Montserrat-regular", size: UIFont.preferredFont(forTextStyle: .body).pointSize)
+    let footnote = Font.custom("Montserrat-regular", size: UIFont.preferredFont(forTextStyle: .footnote).pointSize)
 }
-
-
-func Text(_ content: any StringProtocol) -> SwiftUI.Text {
-    .init(content).font(.body)
-}
-
-func TextField(_ titleKey: LocalizedStringKey, text: Binding<String>, axis: Axis = .horizontal) -> some View {
-    SwiftUI.TextField(titleKey, text: text, axis: axis).font(.body)
-}
-
-
 
 
 struct FontSizeModifier: ViewModifier {
@@ -36,12 +21,27 @@ struct FontSizeModifier: ViewModifier {
     }
 }
 
+struct FontStyleModifier: ViewModifier {
+    var style: UIFont.TextStyle
+    func body(content: Content) -> some View {
+        content
+            .font(.custom("Montserrat-regular", size: UIFont.preferredFont(forTextStyle: style).pointSize))
+    }
+}
+
 extension Text {
     
     func fontSize(size: CGFloat) -> some View {
         ModifiedContent(
             content: self,
             modifier: FontSizeModifier(size: size)
+        )
+    }
+    
+    func fontStyle(style: UIFont.TextStyle) -> some View {
+        ModifiedContent(
+            content: self,
+            modifier: FontStyleModifier(style: style)
         )
     }
 }
